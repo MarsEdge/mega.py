@@ -434,7 +434,7 @@ class Mega(object):
         """
         Download a file by it's file object
         """
-        self._download_file(None, None, file=file[1], dest_path=dest_path, dest_filename=dest_filename, is_public=False)
+        self._download_file(None, None, dest_path, dest_filename, False, file)
 
     def download_url(self, url, dest_path=None, dest_filename=None):
         """
